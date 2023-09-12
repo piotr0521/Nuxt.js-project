@@ -1,0 +1,63 @@
+.form {
+  position: relative;
+  padding: 36px 26px;
+  border-radius: 12px;
+  background-color: $white;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 26px 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__caption {
+    margin-bottom: 12px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  &__fields {
+    margin-bottom: 22px;
+  }
+
+  &__row {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  &__checkbox {
+    margin-right: 30px;
+
+    @include breakpoint(0, $sm) {
+      margin-right: 0;
+      margin-bottom: 12px;
+      width: 100%;
+    }
+
+    &:last-child {
+      @include breakpoint(0, $md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.fade-enter-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-leave-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

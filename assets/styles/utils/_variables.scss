@@ -1,0 +1,79 @@
+/* Variables */
+$primary-font-family: "Montserrat", sans-serif;
+$secondary-font-family: "DM Sans", sans-serif;
+$font-stack-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$border-radius: 0;
+
+// Colors
+//
+// Color system
+
+$primary: #164ED0;
+$secondary: #152435;
+$accent: #F13870;
+$purple: #8A77FF;
+$pink: #F588FF;
+$blue: #164ED0;
+$blue-500: #e5efff;
+$red: #D82C0D;
+$green: #2B735D;
+$success: $green;
+$disabled: #F4F4F4;
+$error: $red;
+$warning: #ff9800;
+$grey: #F6F8FA;
+$grey-300: #EDEEEF;
+$grey-400: #EEEEEE;
+$grey-500: #F5F5F5;
+$grey-600: #E0E0E0;
+$grey-700: #9E9E9E;
+$grey-800: #FAFBFF;
+$grey-text: #757575;
+$black: #000;
+$dark: #202223;
+$text: #616161;
+$white: #fff;
+$body-bg: #fff;
+
+$gray-600: #475467;
+$gray-900: #101828;
+
+$color-map: (
+        primary: $primary,
+        success: $success,
+        error: $error,
+        disabled: $disabled,
+        white: $white,
+        background: $grey,
+        border: $grey,
+        grey: $grey,
+        dark: $dark,
+);
+
+//Breakpoints
+$xs: 374px;
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xlg: 1200px;
+$xl: 1420px;
+$xxl: 1700px;
+
+$link-color: $blue;
+$link-decoration: none;
+$link-hover-color: $blue;
+$link-hover-decoration: underline;
+
+// Gradient
+//$primary-gradient: linear-gradient(52.56deg, $primary 16.62%, $accent 109.83%), $primary;
+$primary-gradient: linear-gradient(160deg, $primary 16.62%, $accent 109.83%), $primary;
+$primary-gradient-mob: linear-gradient(110deg, $primary 16.62%, $accent 109.83%), $primary;
+$button-gradient: linear-gradient(92.36deg, $primary 1.15%, $accent 123.37%), $primary;
+$secondary-gradient: linear-gradient(91.55deg, #E5EFFF 53.38%, rgba(229, 239, 255, 0) 100.81%);
+$body-gradient: linear-gradient(180deg, $blue-500 0%, rgba(229, 239, 255, 0.262661) 43.75%, rgba(229, 239, 255, 0) 100%);
+
+// Box Shadow
+$box-shadow-primary: 11px 22px 55px rgb(55 22 137 / 4%);
+$box-shadow-button: 2px 2px 15px rgba(0, 0, 0, 0.05);
+$box-shadow-card: 6px 5px 22px 16px rgb(55 22 137 / 7%);

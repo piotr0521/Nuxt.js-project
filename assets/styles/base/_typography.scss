@@ -1,0 +1,193 @@
+/* Typography */
+body {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  color: $text;
+
+  @include breakpoint(0, $md) {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.main-title,
+.heading,
+.title,
+.caption,
+.subtitle,
+.label {
+  font-weight: 700;
+  font-family: $primary-font-family;
+  line-height: 1.22;
+  color: $dark;
+}
+
+.dark-context {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .main-title,
+  .heading,
+  .title,
+  .caption,
+  .label {
+    color: $white;
+  }
+
+  .subtitle {
+    color: rgba($white, 0.8);
+  }
+}
+
+h1,
+.main-title {
+  font-size: 36px;
+
+  @include breakpoint(0, $md) {
+    font-size: 32px;
+  }
+
+  @include breakpoint(0, $sm) {
+    font-size: 28px;
+  }
+}
+
+.heading {
+  font-size: 28px;
+
+  @include breakpoint(0, $lg) {
+    font-size: 24px;
+  }
+
+  @include breakpoint(0, $md) {
+    font-size: 20px;
+  }
+
+  @include breakpoint(0, $sm) {
+    font-size: 18px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  @include breakpoint(0, $md) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+
+  @include breakpoint(0, $md) {
+    font-size: 22px;
+  }
+}
+
+.title {
+  font-size: 22px;
+  line-height: 1.4;
+
+  @include breakpoint(0, $lg) {
+    font-size: 18px;
+  }
+
+  @include breakpoint(0, $md) {
+    font-size: 16px;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+h4 {
+  font-size: 22px;
+
+  @include breakpoint(0, $md) {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 17px;
+  color: $primary;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.caption {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+
+  @include breakpoint(0, $md) {
+    font-size: 14px;
+  }
+}
+
+h6,
+.label {
+  font-size: 16px;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1.4em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.gradient-text {
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(92.36deg, $primary 1.15%, $accent 123.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-lg {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}

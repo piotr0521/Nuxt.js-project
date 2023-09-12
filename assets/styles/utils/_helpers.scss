@@ -1,0 +1,130 @@
+/* Helpers */
+// Image helpers
+//
+//
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+// Text helpers
+//
+//
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+
+  .gradient-text,
+  &.gradient-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.dark-context {
+  color: rgba($white, 0.7) !important;
+  background-color: $secondary !important;
+}
+
+.light-context {
+  color: $dark !important;
+}
+
+.text-light {
+  color: $white !important;
+}
+
+.text-dark {
+  color: $dark !important;
+}
+
+.text-accent {
+  color: $accent !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.screen-reader-text,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.d-none-md {
+  @include breakpoint(0, $lg) {
+    display: none !important;
+  }
+}
+
+.d-block-sm {
+  @include breakpoint(0, $md) {
+    display: block !important;
+  }
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-2 {
+  margin-bottom: 22px;
+}
+
+.mb-3 {
+  margin-bottom: 36px;
+}
+
+.bg-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+  background-size: auto;
+  -webkit-background-size: auto;
+  background-position: 0 0;
+}

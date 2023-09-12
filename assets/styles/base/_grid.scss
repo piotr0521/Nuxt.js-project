@@ -1,0 +1,20 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1210px; // 1170
+  padding: 0 20px;
+
+  &--lg {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1410px; // 1390
+  }
+
+  &--sm {
+    max-width: 786px; // 766
+  }
+
+  &--wide {
+    max-width: 100%;
+  }
+}
